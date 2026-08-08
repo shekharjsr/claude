@@ -1,8 +1,8 @@
-# CloudCarbon — Multi-cloud emission tracking and workload optimization
+# PSS 2.0 — Multi-cloud emission tracking and workload optimization
 
-Large cloud deployments generate a lot of carbon. Most teams don't know how much, or where it's coming from. This platform fixes that.
+Large cloud deployments generate a lot of carbon. Most teams don't know how much, or where it's coming from. PSS 2.0 fixes that.
 
-Built initially for Volkswagen Group's infrastructure running across AWS and Azure, CloudCarbon pulls real-time energy and workload telemetry from both clouds, maps it against live regional carbon intensity grids, and gives engineering and sustainability teams a shared view of what's actually happening — per workload, per region, per hour.
+Built initially for Volkswagen Group's infrastructure running across AWS and Azure, PSS 2.0 pulls real-time energy and workload telemetry from both clouds, maps it against live regional carbon intensity grids, and gives engineering and sustainability teams a shared view of what's actually happening — per workload, per region, per hour.
 
 After six months in production across Volkswagen Group's fleet, it has contributed to a 20% reduction in cloud infrastructure carbon emissions.
 
@@ -12,13 +12,13 @@ After six months in production across Volkswagen Group's fleet, it has contribut
 
 Running workloads across AWS and Azure means dealing with two different billing models, two different monitoring stacks, and zero unified visibility into carbon footprint. Most cloud cost tools treat emissions as a reporting checkbox — a number that appears somewhere in a dashboard but doesn't connect to any actual decision.
 
-That gap is what this project addresses. When a workload is running in a high-carbon region during peak grid hours, the platform identifies it and generates a specific recommendation: which region to shift to, what the estimated emission saving looks like, and what the latency or cost trade-offs are. The output is readable by both an infrastructure engineer and a sustainability officer.
+That gap is what PSS 2.0 addresses. When a workload is running in a high-carbon region during peak grid hours, the platform identifies it and generates a specific recommendation: which region to shift to, what the estimated emission saving looks like, and what the latency or cost trade-offs are. The output is readable by both an infrastructure engineer and a sustainability officer.
 
 ---
 
 ## How it works
 
-The platform sits as a layer across both clouds. It ingests:
+PSS 2.0 sits as a layer across both clouds. It ingests:
 
 - Energy consumption metrics per instance/service (AWS CloudWatch, Azure Monitor)
 - Regional carbon intensity data (live grid feeds, updated hourly)
@@ -64,14 +64,16 @@ Claude is used at two points: summarizing aggregated emission reports into reada
 - [ ] Terraform module for self-hosted deployment
 - [ ] Public API for carbon intensity lookups
 
+See [ROADMAP.md](ROADMAP.md) for the full breakdown.
+
 ---
 
 ## Contributing
 
-The project is not yet publicly open for contributions, but will be ahead of the open-source release. Watch this repo for updates.
+PSS 2.0 is not yet open for external contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for details on the planned open-source release and how to stay involved in the meantime.
 
 ---
 
 ## License
 
-To be determined ahead of open-source release. Likely Apache 2.0.
+Licensed under the [Apache License 2.0](LICENSE).
